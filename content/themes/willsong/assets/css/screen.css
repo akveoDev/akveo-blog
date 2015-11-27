@@ -1,0 +1,1427 @@
+/*  Willsong - Ghost Theme
+* 
+* AFTERTYPE.COM
+*
+* v2.0.0
+* Copyright (c) 2014
+*
+*
+*
+* Styling Content:
+*
+* 0. IMPORTS (Normalize & Fonts Setup)
+* A. HEADER
+* B. MAIN CONTENT
+* C. PAGINATION
+* D. SINGLE POST, COMMENTS
+* E. TAG PAGE
+* F. AUTHOR PAGE
+* G. COMMENTS
+* H. FOOTER
+* X. MEDIA QUERIES (Smaller Screens)
+* X. MEDIA QUERIES (Medium Screens)
+* X. MEDIA QUERIES (Bigger Screens)
+*
+* */
+@import url("//cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css");
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300italic,400italic,700italic|Open+Sans:700");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+body {
+  background-color: #fff;
+  color: #373737;
+  font-family: 'Source Sans Pro';
+  line-height: 1.4em;
+  text-rendering: optimizeLegibility;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  line-height: 1.4em;
+}
+/* ====================================
+// A. HEADER
+// ================================= */
+#head-wsong {
+  background-color: #151515;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#top-menu-wsong {
+  background-color: #151515;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+#top-menu-wsong ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#top-menu-wsong .nav a {
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#top-menu-wsong .nav a:hover {
+  color: #303030;
+}
+.home-template #back-home-wsong {
+  display: none;
+}
+.top-menu-link-wsong {
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.top-menu-link-wsong:hover {
+  color: #303030;
+}
+#inside-head-wsong {
+  overflow: hidden;
+  position: relative;
+}
+#inside-head-wsong * {
+  position: relative;
+}
+#inside-head-cover-wsong {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  bottom: 0;
+  height: auto;
+  left: 0;
+  margin: auto;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+#index-logo-wsong {
+  height: auto;
+  width: auto;
+}
+#blog-title-wsong,
+#index-description-wsong {
+  color: #fff;
+  margin: 0;
+}
+#blog-title-wsong {
+  border: 4px solid #fff;
+  display: inline-block;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#index-description-wsong {
+  display: inline-block;
+}
+/* ====================================
+// B. MAIN CONTENT
+// ================================= */
+#post-feed-wsong {
+  margin: 0 auto;
+  position: relative;
+}
+#post-feed-wsong article {
+  position: relative;
+}
+.meta-divider {
+  background-color: #dbdbdb;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+}
+.post-meta-wsong,
+.post-excerpt-wsong {
+  display: inline-block;
+  vertical-align: top;
+}
+.post-meta-wsong {
+  background-color: #fff;
+  color: #ababab;
+  font-size: 0.86em;
+}
+.post-meta-wsong .author-pic {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: auto;
+}
+.post-meta-wsong a {
+  color: #ababab;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.post-meta-wsong a:hover {
+  color: #dbdbdb;
+}
+.post-meta-wsong p {
+  padding: 0;
+}
+.post-excerpt-wsong {
+  position: relative;
+}
+.post-excerpt-wsong .post-title {
+  font-size: 1.6em;
+  line-height: 1.48em;
+  padding: 0;
+}
+.post-excerpt-wsong .post-title a {
+  color: #373737;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.post-excerpt-wsong .post-title a:hover {
+  color: #dbdbdb;
+}
+.post-thumbnail {
+  padding: 0;
+}
+.post-thumbnail img {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: auto;
+  width: 100%;
+}
+.read-more-link-wsong {
+  background-color: #373737;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-size: 0.86em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.read-more-link-wsong:hover {
+  background-color: #dbdbdb;
+}
+/* ====================================
+// C. PAGINATION
+// ================================= */
+#pagination-top-wsong {
+  background-color: #ccc;
+  display: none;
+  color: #fff;
+  position: relative;
+}
+#pagination-top-wsong a {
+  border-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+}
+#pagination-top-wsong a:hover {
+  border-color: #373737;
+  color: #373737;
+}
+nav.pagination {
+  font-size: 0.8em;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+}
+nav.pagination a {
+  border: 2px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ccc;
+  display: inline-block;
+  font-family: "Open Sans";
+  font-weight: 700;
+  padding: 0 12px;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+nav.pagination a:hover {
+  border-color: #373737;
+  color: #373737;
+}
+nav.pagination .newer-posts {
+  left: 0;
+}
+nav.pagination .older-posts {
+  right: 0;
+}
+/* ====================================
+// D. SINGLE POST, COMMENTS
+// ================================= */
+#in-post-content {
+  position: relative;
+}
+#in-post-content a {
+  color: #373737;
+  font-weight: 700;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#in-post-content a:hover {
+  color: #a5b3b9;
+}
+#in-post-content code {
+  background-color: #ebebeb;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #000;
+  font-size: 0.9em;
+  padding: 0 10px;
+}
+#in-post-content pre code {
+  background-color: transparent;
+}
+#in-post-footer {
+  position: relative;
+}
+#in-post-footer a {
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#in-post-footer .share-post {
+  line-height: 26px;
+}
+#in-post-footer .share-post a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 26px;
+  margin: 0 5px;
+  padding: 0 15px;
+}
+#in-post-footer .share-post a:hover {
+  opacity: 0.5;
+}
+#in-post-footer .share-label {
+  font-size: 0.86em;
+  font-weight: 700;
+}
+#in-post-footer .fa-twitter {
+  background-color: #4099ff;
+}
+#in-post-footer .fa-facebook {
+  background-color: #3b5998;
+}
+#in-post-footer .fa-google-plus {
+  background-color: #d34836;
+}
+#in-post-footer .jump-to-posts {
+  text-align: center;
+}
+#in-post-footer .jump-to-posts article {
+  border: 1px dashed #a5b3b9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 16px;
+  width: 100%;
+}
+#in-post-footer .jump-to-posts article h4 {
+  margin-top: 0;
+}
+#in-post-footer .jump-to-posts article a {
+  background-color: #151515;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 2px 10px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#in-post-footer .jump-to-posts article a:hover {
+  background-color: #ebebeb;
+  color: #ababab;
+}
+#in-post-footer .jump-to-posts .next-post {
+  margin-bottom: 16px;
+}
+#in-post-footer .post-author {
+  background-color: #ebebeb;
+}
+#in-post-footer .author-pic,
+#in-post-footer .author-info {
+  display: inline-block;
+  vertical-align: top;
+}
+#in-post-footer .author-pic {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: auto;
+  margin-right: -5px;
+  width: 67px;
+}
+#in-post-footer .author-info {
+  color: #151515;
+}
+#in-post-footer .author-info a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#in-post-footer .author-info h4 {
+  font-size: 1.2em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+#in-post-footer .author-info h4 a {
+  color: #373737;
+}
+#in-post-footer .author-info h4 a:hover {
+  color: #a5b3b9;
+}
+#in-post-footer .author-info p {
+  margin: 14px 0 12px 0;
+  padding: 0;
+}
+#in-post-footer .author-info .author-website {
+  color: #a5b3b9;
+  font-size: 0.86em;
+  text-decoration: underline;
+}
+#in-post-footer .author-info .author-website:hover {
+  color: #373737;
+}
+/* ====================================
+// E. TAG PAGE
+// ================================= */
+#tag-page-title-wsong {
+  color: #fff;
+  font-size: 2.3em;
+  margin: 0;
+}
+#tag-page-title-wsong span {
+  font-family: 'Source Sans Pro';
+  font-size: 0.46em;
+  font-weight: 400;
+  line-height: 0.8em;
+}
+/* ====================================
+// F. AUTHOR PAGE
+// ================================= */
+#author-page-data-wsong {
+  background-color: #fff;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+}
+#author-page-data-wsong .author-pic {
+  border: 3px solid #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: auto;
+  margin: 0;
+  margin-top: -55px;
+  width: 110px;
+}
+#author-page-data-wsong .author-name {
+  font-size: 1.8em;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+}
+#author-page-data-wsong .author-end-stats {
+  color: #a5b3b9;
+  font-size: 0.8em;
+}
+#author-page-data-wsong .author-end-stats a {
+  color: #a5b3b9;
+  margin-right: 21px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#author-page-data-wsong .author-end-stats a:hover {
+  color: #dbdbdb;
+}
+.paged #author-page-data-wsong {
+  border-bottom: none;
+}
+#footer-wsong {
+  border-top: 1px dashed #a5b3b9;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+#bottom-footer {
+  background-color: #151515;
+  color: #fff;
+  height: 34px;
+  line-height: 34px;
+  position: relative;
+}
+#bottom-footer div {
+  margin: 0 auto;
+  position: relative;
+}
+#bottom-footer a {
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#bottom-footer a:hover {
+  color: #303030;
+}
+#dynasocial-links a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+#bottom-copyright {
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: right;
+  top: 0;
+}
+.dynawidgets-area {
+  position: relative;
+}
+.dyna-spot {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: top;
+}
+.dyna-spot h5 {
+  margin: 0;
+  padding: 0;
+}
+.dyna-spot .pics-container {
+  position: relative;
+}
+.dyna-spot .grid-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  vertical-align: top;
+}
+.dyna-spot .grid-img:hover {
+  opacity: 0.4;
+}
+/* ====================================
+// I. MEDIA QUERIES(Smaller Screens)
+// ================================= */
+@media only screen and (min-width: 320px) {
+  body {
+    font-size: 17px;
+  }
+  #top-menu-wsong {
+    font-size: 0.9em;
+    max-height: 0;
+    line-height: 67px;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+  }
+  #top-menu-wsong li {
+    border-top: 1px dotted #303030;
+    display: block;
+    margin: 0 20px;
+  }
+  #top-menu-wsong li:first-of-type {
+    border-top: none;
+  }
+  #back-home-wsong {
+    border-bottom: 1px dotted #303030;
+    margin: 0 20px;
+  }
+  #back-home-wsong span {
+    display: none;
+  }
+  #top-menu-wsong.mmenushow {
+    max-height: 600px;
+  }
+  .top-menu-link-wsong {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+  #mobile-menu-btn-wsong {
+    border: 1px solid #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    height: 32px;
+    line-height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    width: 32px;
+    z-index: 20;
+  }
+  #mobile-menu-btn-wsong:hover {
+    background-color: #fff;
+    color: #373737;
+  }
+  #mobile-menu-btn-wsong.giro {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  #inside-head-wsong {
+    padding: 48px 0;
+  }
+  #inside-head-wsong a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .author-template #inside-head-wsong {
+    padding: 67px 0;
+  }
+  #index-logo-wsong {
+    max-height: 90px;
+    max-width: 220px;
+  }
+  #blog-title-wsong {
+    font-size: 1.4em;
+    letter-spacing: 0.8px;
+    padding: 6px 10px;
+  }
+  #index-description-wsong {
+    font-size: 0.9em;
+    margin-top: 21px;
+    max-width: 380px;
+    padding: 0 20px;
+  }
+  .paged #pagination-top-wsong {
+    display: block;
+    margin-bottom: 42px;
+    padding: 18px 20px;
+  }
+  .paged #pagination-top-wsong .pagination {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+  }
+  .paged #pagination-top-wsong .pagination span {
+    border-bottom: 1px solid #ebebeb;
+  }
+  .paged #inside-head-wsong {
+    padding: 42px 0;
+  }
+  .paged #index-logo-wsong {
+    max-height: 70px;
+    max-width: 220px;
+  }
+  .paged #blog-title-wsong {
+    font-size: 1.4em;
+  }
+  .paged #index-description-wsong {
+    display: none;
+  }
+  #post-feed-wsong {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 42px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  #post-feed-wsong article {
+    margin-bottom: 84px;
+  }
+  .meta-divider {
+    left: 0;
+    width: 0;
+  }
+  .post-meta-wsong {
+    margin-right: 0;
+    padding-bottom: 18px;
+    text-align: left;
+    width: 100%;
+  }
+  .post-meta-wsong .author-pic {
+    height: 26px;
+  }
+  .post-meta-wsong p {
+    display: inline-block;
+    line-height: 26px;
+    margin: 0 0 0 5px;
+    vertical-align: top;
+  }
+  .post-meta-wsong .post-date {
+    display: none;
+  }
+  .post-meta-wsong .tags {
+    display: inline;
+    line-height: 26px;
+    vertical-align: top;
+  }
+  .post-meta-wsong .tags:before {
+    content: " on: ";
+    margin-left: 3px;
+    vertical-align: top;
+  }
+  .post-meta-wsong .tags a {
+    margin: 0 3px;
+    vertical-align: top;
+  }
+  .post-excerpt-wsong {
+    width: 100%;
+  }
+  .post-excerpt-wsong .post-title {
+    margin: 0 0 21px 0;
+  }
+  .post-thumbnail {
+    margin: 0 0 21px 0;
+  }
+  .read-more-link-wsong {
+    line-height: 42px;
+    margin: 21px 0 67px 0;
+    padding: 0 22px;
+  }
+  nav.pagination {
+    height: 110px;
+    margin-bottom: 84px;
+  }
+  nav.pagination a {
+    top: 67px;
+  }
+  nav.pagination span {
+    border-bottom: 1px solid #dbdbdb;
+    display: block;
+    padding: 0 20px 12px 20px;
+  }
+  #in-post-meta {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    width: 100%;
+  }
+  #in-post-meta h1 {
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+  }
+  #in-post-meta #in-post-page-title {
+    text-align: center;
+  }
+  #in-post-meta time {
+    display: block;
+    font-size: 0.86em;
+    margin: 18px 0 26px 0;
+  }
+  #in-post-meta a {
+    border: 1px solid #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 0.86em;
+    margin: 0 10px 0 0;
+    padding: 0 12px;
+  }
+  #in-post-meta a:hover {
+    background-color: #fff;
+    color: #373737;
+  }
+  #in-post-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 42px auto 42px auto;
+    padding: 0 20px;
+    width: 100%;
+  }
+  #in-post-content img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    max-width: 100%;
+    margin: 21px auto;
+  }
+  #in-post-content blockquote {
+    border-left: 10px solid #373737;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin: 42px 0;
+    padding: 0;
+    padding-left: 42px;
+  }
+  .page-template #in-post-content {
+    margin-bottom: 42px;
+  }
+  #in-post-footer {
+    margin-bottom: 67px;
+  }
+  #in-post-footer .share-post,
+  #in-post-footer .jump-to-posts,
+  #in-post-footer #dynacomments {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto 42px auto;
+    padding: 0 20px;
+    width: 100%;
+  }
+  #in-post-footer .share-post {
+    text-align: center;
+  }
+  #in-post-footer .share-label {
+    display: block;
+  }
+  #in-post-footer .post-author {
+    padding: 42px 0;
+  }
+  #in-post-footer #dynacomments {
+    padding: 42px 20px;
+  }
+  #in-post-footer .author-data {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+  #in-post-footer .author-info {
+    margin: 14px 0 0 0;
+    width: 100%;
+  }
+  #author-page-data-wsong {
+    margin-bottom: 42px;
+    padding-bottom: 42px;
+  }
+  #author-page-data-wsong .author-bio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .paged #author-page-data-wsong {
+    margin-bottom: 32px;
+    padding-bottom: 0;
+  }
+  #footer-wsong {
+    padding-top: 42px;
+  }
+  #bottom-footer {
+    padding: 20px 0;
+  }
+  #bottom-footer div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+  }
+  #bottom-copyright {
+    line-height: 17px;
+    right: 20px;
+    width: 180px;
+  }
+  .dynawidgets-area {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto 67px auto;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .dyna-spot {
+    margin: 0 0 40px 0;
+    width: 100%;
+  }
+  .dyna-spot .grid-img {
+    height: 0;
+    margin-top: 10px;
+    padding-bottom: 30%;
+    width: 30%;
+  }
+  .dyna-spot .grid-img:nth-of-type(3n + 2) {
+    margin: 10px 5% 10px 5%;
+  }
+}
+@media only screen and (min-width: 540px) {
+  body {
+    font-size: 18px;
+  }
+  #index-logo-wsong {
+    max-height: 100px;
+    max-width: 280px;
+  }
+  #blog-title-wsong {
+    font-size: 1.6em;
+    padding: 8px 12px;
+  }
+  #index-description-wsong {
+    font-size: 1em;
+    margin-top: 21px;
+    max-width: 600px;
+  }
+  #in-post-footer .share-post {
+    text-align: left;
+  }
+  #in-post-footer .share-label {
+    display: inline;
+  }
+  .dyna-spot {
+    margin: 0;
+    width: 30%;
+  }
+  .dyna-spot .grid-img {
+    height: 0;
+    margin-top: 15px;
+    padding-bottom: 30%;
+    width: 30%;
+  }
+  .dyna-spot .grid-img:nth-of-type(3n + 2) {
+    margin: 15px 5% 0 5%;
+  }
+  #dyna-spot-2,
+  #dyna-spot-5 {
+    margin: 0 5%;
+  }
+}
+/* ====================================
+// J. MEDIA QUERIES(Medium Screens)
+// ================================= */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 19px;
+  }
+  #top-menu-wsong {
+    font-size: 0.9em;
+    height: 42px;
+    max-height: 42px;
+    line-height: 42px;
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    transition: all 0s ease;
+  }
+  #top-menu-wsong li {
+    border: none;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+  }
+  .absolute-options-wsong {
+    font-size: 0.78em;
+    position: absolute;
+  }
+  #rss-subscribe-wsong {
+    right: 10px;
+    top: 0;
+  }
+  #back-home-wsong {
+    border: none;
+    left: 10px;
+    margin: 0;
+    top: 0;
+  }
+  #back-home-wsong span {
+    display: inline;
+  }
+  .top-menu-link-wsong {
+    display: inline;
+    margin: 0 10px;
+  }
+  #mobile-menu-btn-wsong {
+    display: none;
+  }
+  #inside-head-wsong {
+    padding: 67px 0;
+  }
+  .author-template #inside-head-wsong {
+    padding: 95px 0;
+  }
+  #index-logo-wsong {
+    max-height: 120px;
+    max-width: 320px;
+  }
+  #blog-title-wsong {
+    font-size: 2em;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+  }
+  #index-description-wsong {
+    font-size: 1.1em;
+    margin-top: 42px;
+    max-width: 634px;
+    padding: 0;
+  }
+  .paged #pagination-top-wsong {
+    margin-bottom: 67px;
+    padding: 18px 0;
+  }
+  .paged #pagination-top-wsong .pagination {
+    margin: 0 auto;
+    width: 704px;
+  }
+  .paged #pagination-top-wsong .pagination span {
+    border: none;
+  }
+  .paged #index-logo-wsong {
+    max-height: 80px;
+    max-width: 320px;
+  }
+  .paged #blog-title-wsong {
+    font-size: 1.6em;
+  }
+  .paged #index-description-wsong {
+    display: none;
+  }
+  #post-feed-wsong {
+    margin-top: 67px;
+    padding: 0;
+    width: 704px;
+  }
+  #post-feed-wsong article {
+    margin-bottom: 134px;
+  }
+  .meta-divider {
+    left: 194px;
+    width: 8px;
+  }
+  .post-meta-wsong {
+    left: -269px;
+    padding-bottom: 21px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 202px;
+  }
+  .post-meta-wsong .author-pic {
+    height: 42px;
+  }
+  .post-meta-wsong a {
+    text-decoration: none;
+  }
+  .post-meta-wsong p {
+    display: block;
+    line-height: 1.4em;
+    margin: 0 0 26px 0;
+  }
+  .post-meta-wsong .post-date {
+    display: block;
+  }
+  .post-meta-wsong .tags {
+    display: block;
+    font-weight: 600;
+  }
+  .post-meta-wsong .tags:before {
+    content: "";
+  }
+  .post-meta-wsong .tags a {
+    border: 1px solid #373737;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #373737;
+    display: inline-block;
+    margin: 0 0 10px 10px;
+    padding: 0 12px;
+  }
+  .post-meta-wsong .tags a:hover {
+    background-color: #373737;
+    color: #fff;
+  }
+  .post-excerpt-wsong {
+    margin-left: 269px;
+    width: 435px;
+  }
+  .post-excerpt-wsong .post-title {
+    margin: 0 0 21px 0;
+  }
+  .post-thumbnail {
+    margin: 0 0 21px 0;
+  }
+  .read-more-link-wsong {
+    line-height: 42px;
+    margin: 21px 0 67px 0;
+    padding: 0 22px;
+  }
+  nav.pagination {
+    height: auto;
+    margin-bottom: 135px;
+  }
+  nav.pagination a {
+    top: 0;
+  }
+  nav.pagination span {
+    border: none;
+    display: inline;
+    padding: 0;
+  }
+  #in-post-meta {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    width: 634px;
+  }
+  #in-post-meta h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
+  #in-post-meta time {
+    display: block;
+    font-size: 0.86em;
+    margin: 18px 0 26px 0;
+  }
+  #in-post-meta a {
+    border: 1px solid #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 0.86em;
+    margin: 0 10px 0 0;
+    padding: 0 12px;
+  }
+  #in-post-meta a:hover {
+    background-color: #fff;
+    color: #373737;
+  }
+  #in-post-content {
+    margin: 67px auto 42px auto;
+    padding: 0;
+    width: 634px;
+  }
+  #in-post-content img {
+    max-width: 634px;
+    margin: 42px auto;
+  }
+  #in-post-content blockquote {
+    margin: 67px 0 67px -67px;
+    padding: 0;
+    padding-left: 57px;
+  }
+  .page-template #in-post-content {
+    margin-bottom: 135px;
+  }
+  #in-post-footer .share-post,
+  #in-post-footer .jump-to-posts,
+  #in-post-footer #dynacomments {
+    margin: 0 auto 67px auto;
+    padding: 0;
+    width: 634px;
+  }
+  #in-post-footer .post-author,
+  #in-post-footer #dynacomments {
+    padding: 67px 0;
+  }
+  #in-post-footer .author-data {
+    padding: 0;
+    text-align: left;
+    width: 634px;
+  }
+  #in-post-footer .author-info {
+    margin: 0 0 0 16px;
+    width: 551px;
+  }
+  #author-page-data-wsong {
+    margin-bottom: 67px;
+    padding-bottom: 67px;
+  }
+  #author-page-data-wsong .author-bio {
+    font-size: 1.1em;
+    margin: 26px auto;
+    padding: 0;
+    max-width: 634px;
+  }
+  .paged #author-page-data-wsong {
+    margin-bottom: 32px;
+    padding-bottom: 0;
+  }
+  #footer-wsong {
+    padding-top: 32px;
+  }
+  #bottom-footer {
+    padding: 32px 0;
+  }
+  #bottom-footer div {
+    width: 704px;
+  }
+  #bottom-copyright {
+    line-height: 34px;
+    right: 0;
+    width: auto;
+  }
+  .dynawidgets-area {
+    margin: 0 auto 32px auto;
+    padding: 0;
+    width: 704px;
+  }
+  .dyna-spot {
+    margin: 0;
+    width: 192px;
+  }
+  .dyna-spot .grid-img {
+    height: 58px;
+    margin-top: 9px;
+    padding: 0;
+    width: 58px;
+  }
+  .dyna-spot .grid-img:nth-of-type(3n + 2) {
+    margin: 9px 9px 0 9px;
+  }
+  #dyna-spot-2,
+  #dyna-spot-5 {
+    margin: 0 64px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  #top-menu-wsong {
+    font-size: 1em;
+    height: 67px;
+    max-height: 67px;
+    line-height: 67px;
+  }
+  #top-menu-wsong #rss-subscribe-wsong,
+  #top-menu-wsong #back-home-wsong {
+    border: 1px solid #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 37px;
+    margin: 15px 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  #top-menu-wsong #rss-subscribe-wsong:hover,
+  #top-menu-wsong #back-home-wsong:hover {
+    background-color: #fff;
+  }
+  #top-menu-wsong #rss-subscribe-wsong a,
+  #top-menu-wsong #back-home-wsong a {
+    padding: 10px 5px;
+  }
+  .top-menu-link-wsong {
+    margin: 0 12px;
+  }
+  #index-description-wsong {
+    max-width: 790px;
+  }
+  .paged #pagination-top-wsong .pagination {
+    width: 896px;
+  }
+  #post-feed-wsong {
+    width: 896px;
+  }
+  .meta-divider {
+    left: 266px;
+    width: 10px;
+  }
+  .post-meta-wsong {
+    left: -343px;
+    width: 276px;
+  }
+  .post-excerpt-wsong {
+    margin-left: 343px;
+    width: 553px;
+  }
+  #in-post-meta,
+  #in-post-content {
+    width: 656px;
+  }
+  #in-post-content img {
+    margin: 42px -67px 42px -67px;
+    max-width: 790px;
+  }
+  #in-post-content img.small-image {
+    margin: 42px auto;
+  }
+  #in-post-footer .share-post,
+  #in-post-footer .author-data,
+  #in-post-footer .jump-to-posts,
+  #in-post-footer #dynacomments {
+    width: 656px;
+  }
+  #in-post-footer .author-info {
+    width: 573px;
+  }
+  #author-page-data-wsong .author-bio {
+    max-width: 790px;
+  }
+  #footer-wsong {
+    padding-top: 56px;
+  }
+  #bottom-footer {
+    padding: 50px 0;
+  }
+  #bottom-footer div {
+    width: 896px;
+  }
+  .dynawidgets-area {
+    margin: 0 auto 67px auto;
+    width: 896px;
+  }
+  .dyna-spot {
+    width: 245px;
+  }
+  .dyna-spot .grid-img {
+    height: 75px;
+    margin-top: 10px;
+    width: 75px;
+  }
+  .dyna-spot .grid-img:nth-of-type(3n + 2) {
+    margin: 10px 10px 0 10px;
+  }
+  #dyna-spot-2,
+  #dyna-spot-5 {
+    margin: 0 80.5px;
+  }
+}
+/* ====================================
+// K. MEDIA QUERIES(Bigger Screens)
+// ================================= */
+@media only screen and (min-width: 1190px) {
+  .paged #pagination-top-wsong .pagination {
+    width: 1010px;
+  }
+  #post-feed-wsong {
+    width: 1010px;
+  }
+  .meta-divider {
+    left: 277px;
+  }
+  .post-meta-wsong {
+    left: -354px;
+    width: 287px;
+  }
+  .post-excerpt-wsong {
+    margin-left: 354px;
+    width: 656px;
+  }
+  #bottom-footer {
+    padding: 50px 0;
+  }
+  #bottom-footer div {
+    width: 1145px;
+  }
+  .dynawidgets-area {
+    width: 1145px;
+  }
+  .dyna-spot {
+    width: 300px;
+  }
+  .dyna-spot .grid-img {
+    height: 90px;
+    margin-top: 15px;
+    width: 90px;
+  }
+  .dyna-spot .grid-img:nth-of-type(3n + 2) {
+    margin: 15px 15px 0 15px;
+  }
+  #dyna-spot-2,
+  #dyna-spot-5 {
+    margin: 0 122.5px;
+  }
+}

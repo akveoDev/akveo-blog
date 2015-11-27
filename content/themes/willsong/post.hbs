@@ -1,0 +1,95 @@
+{{!< default}}
+{{! Top line inserts this template on main layout}}
+
+{{! Post template start}}
+{{#post}}
+<article class="{{post_class}}">
+
+<header id="head-wsong">
+	{{> menu}}
+	
+	<div id="mobile-menu-btn-wsong"><span class="fa fa-reorder"></span></div>
+
+	<div id="inside-head-wsong">
+
+		{{#if image}}
+		<div id="inside-head-cover-wsong" style="background-image:url({{image}});"></div>
+		{{/if}}
+
+		<div id="in-post-meta" class="diffuse-elements">
+			<h1 id="in-post-title">{{title}}</h1>
+			<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="LL"}}</time>
+			{{tags separator=" "}}
+		</div>
+		
+	</div>
+</header>
+
+<section id="in-post-content">
+	{{content}}
+</section>
+
+<footer id="in-post-footer">
+	<section class="share-post">
+		<span class="share-label">SHARE ON:</span>
+		<a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" 
+		onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"
+		class="fa fa-twitter"> <span>Twitter</span></a>
+		<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" 
+		onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"
+		class="fa fa-facebook"> <span>Facebook</span></a>
+		<a href="https://plus.google.com/share?url={{url absolute="true"}}" 
+		onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" 
+		class="fa fa-google-plus"> <span>Google+</span></a>
+	</section>
+
+	<section class="jump-to-posts">
+		<h3>More from {{@blog.title}}</h3>
+		
+		{{#next_post}}
+		<article class="more-from-blog next-post">
+			<h4>{{title}}</h4>
+			<p>
+				{{excerpt words="30"}}...
+			</p>
+			<a href="{{url}}">See Article</a>
+		</article>
+		{{/next_post}}
+
+		{{#prev_post}}
+		<article class="more-from-blog prev-post">
+			<h4>{{title}}</h4>
+			<p>
+				{{excerpt words="30"}}...
+			</p>
+			<a href="{{url}}">See Article</a>
+		</article>
+		{{/prev_post}}
+	</section>
+
+	<section class="post-author">
+		{{#author}}
+		<div class="author-data">
+			{{#if image}}
+			<img class="author-pic" src="{{image}}" alt="{{name}}">
+			{{/if}}
+			<div class="author-info">
+				<h4><a href="{{url}}">{{name}}</a></h4>
+				{{#if bio}}
+				<p>
+					{{bio}}
+				</p>
+				{{/if}}
+				{{#if website}}
+				<a class="author-website" href="{{website}}"><span class="fa fa-link"></span> {{website}}</a>
+				{{/if}}
+			</div>
+		</div>
+		{{/author}}
+	</section>
+
+	<section id="dynacomments" data-backuseid="{{id}}"></section>
+</footer>
+
+</article>
+{{/post}}

@@ -1,0 +1,41 @@
+{{!< default}}
+{{! Top line inserts this template on main layout}}
+
+{{! Home/Index template start}}
+<header id="head-wsong">
+	{{> menu}}
+
+	<div id="mobile-menu-btn-wsong"><span class="fa fa-reorder"></span></div>
+
+	<div id="inside-head-wsong">
+
+		{{#if @blog.cover}}
+		<div id="inside-head-cover-wsong" style="background-image:url({{@blog.cover}});"></div>
+		{{/if}}
+	
+		{{#if @blog.logo}}
+		<img id="index-logo-wsong" class="diffuse-elements" src="{{@blog.logo}}" alt="{{@blog.title}} Logo">
+		{{else}}
+		<h1 id="blog-title-wsong" class="diffuse-elements">{{@blog.title}}</h1>
+		{{/if}}
+		
+		<br>
+
+		<p id="index-description-wsong" class="diffuse-elements">
+			{{@blog.description}}
+		</p>
+		
+	</div>
+</header>
+
+{{! Pagination links - displayed only on paged layout}}
+<div id="pagination-top-wsong">
+{{pagination}}
+</div>
+
+<main id="post-feed-wsong">
+
+	{{! Loop of posts for current page}}
+	{{> loop}}
+	
+</main>

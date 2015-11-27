@@ -1,0 +1,31 @@
+{{!< default}}
+{{! Top line inserts this template on main layout}}
+
+{{! Page template start}}
+{{#post}}
+<article class="{{post_class}}">
+	
+<header id="head-wsong">
+	{{> menu}}
+	
+	<div id="mobile-menu-btn-wsong"><span class="fa fa-reorder"></span></div>
+
+	<div id="inside-head-wsong">
+
+		{{#if image}}
+		<div id="inside-head-cover-wsong" style="background-image:url({{image}});"></div>
+		{{/if}}
+
+		<div id="in-post-meta" class="diffuse-elements">
+			<h1 id="in-post-page-title">{{title}}</h1>
+		</div>
+		
+	</div>
+</header>
+
+<section id="in-post-content">
+	{{content}}
+</section>
+
+</article>
+{{/post}}

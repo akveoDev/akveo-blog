@@ -1,0 +1,43 @@
+{{!< default}}
+{{! Top line inserts this template on main layout}}
+
+{{! Author template start}}
+<header id="head-wsong">
+	{{> menu}}
+
+	<div id="mobile-menu-btn-wsong"><span class="fa fa-reorder"></span></div>
+
+	{{#author}}
+	<div id="inside-head-wsong">
+		{{#if cover}}
+		<div id="inside-head-cover-wsong" style="background-image:url({{cover}});"></div>
+		{{/if}}
+	</div>
+	<div id="author-page-data-wsong">
+		{{#if image}}
+		<img class="author-pic" src="{{image}}" alt="{{name}}">
+		{{/if}}
+		<h1 class="author-name">{{name}}</h1>
+		<p class="author-bio">{{bio}}</p>
+
+		<div class="author-end-stats">
+			{{#if website}}
+			<a class="author-website" href="{{website}}">{{website}}</a>
+			{{/if}}
+			<span class="fa fa-archive"></span> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+		</div>
+	</div>
+	{{/author}}
+</header>
+
+{{! Pagination links - displayed only on paged layout}}
+<div id="pagination-top-wsong">
+{{pagination}}
+</div>
+
+<main id="post-feed-wsong">
+
+	{{! Loop of posts for current page}}
+	{{> loop}}
+	
+</main>

@@ -1,0 +1,34 @@
+{{!< default}}
+{{! Top line inserts this template on main layout}}
+
+{{! Tag posts feed template start}}
+<header id="head-wsong">
+	{{> menu}}
+
+	<div id="mobile-menu-btn-wsong"><span class="fa fa-reorder"></span></div>
+
+	<div id="inside-head-wsong">
+
+		{{#if @blog.cover}}
+		<div id="inside-head-cover-wsong" style="background-image:url({{@blog.cover}});"></div>
+		{{/if}}
+	
+		<h1 id="tag-page-title-wsong" class="diffuse-elements">
+			<span>{{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} about</span> <br>
+			{{tag.name}}
+		</h1>
+		
+	</div>
+</header>
+
+{{! Pagination links - displayed only on paged layout}}
+<div id="pagination-top-wsong">
+{{pagination}}
+</div>
+
+<main id="post-feed-wsong">
+
+	{{! Loop of posts for current page}}
+	{{> loop}}
+	
+</main>

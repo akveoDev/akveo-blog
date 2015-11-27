@@ -1,0 +1,35 @@
+{{! Loop that displays the articles query on posts feed}}
+{{#foreach posts}}
+<article class="{{post_class}}">
+	<div class="meta-divider"></div>
+	<section class="post-excerpt-wsong">
+		<header>
+			<h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+		</header>
+
+		<section class="post-meta-wsong">
+			{{#if author.image}}
+			<img src="{{author.image}}" alt="{{author.name}}" class="author-pic">
+			{{/if}}
+			<p>
+				by {{author}}
+				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="LL"}}</time>
+			</p><div class="tags">
+				{{tags separator=" "}}
+			</div>
+		</section>
+
+		{{#if image}}
+		<figure class="post-thumbnail">
+			<img src="{{image}}" alt="{{title}} thumbnail">
+		</figure>
+		{{/if}}
+		{{excerpt words="58"}}...
+		<br>
+		<a href="{{url}}" class="read-more-link-wsong">Read More</a>
+	</section>
+</article>
+{{/foreach}}
+
+{{! Pagination links - displayed on every page}}
+{{pagination}}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="{{asset "favicon.png"}}">
+
+	<!--[if lt IE 9]>
+	<script src="//cdn.jsdelivr.net/nwmatcher/1.2.5/nwmatcher.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<![endif]-->
+
+	{{! Styles}}
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css" />
+	<link rel="stylesheet" type="text/css" href="{{asset "css/prettify/sunburst.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+
+	{{! Ghost OUTPUT Data}}
+	{{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+	{{{body}}}
+
+	{{> footer}}
+
+	{{! Ghost OUTPUT Data}}
+	{{ghost_foot}}
+
+	{{! Javascript files for the theme and Aftertype Services }}
+	<script data-main="{{asset "js/main.js"}}" 
+    type="text/javascript" src="//cdn.jsdelivr.net/requirejs/2.1.14/require.min.js"></script>
+	
+</body>
+</html>
