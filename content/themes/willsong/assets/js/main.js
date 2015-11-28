@@ -32,7 +32,15 @@ function ($){
 // ===============================
 var _uconfig = {
   _userCustomScripts: [],
-  socialProfiles: [],
+  socialProfiles: {
+    _active: true,
+    items: [
+      {
+        site: 'github',
+        url: '//github.com/akveo'
+      }
+    ]
+  },
   widgetsConfig: {
     _active: false
   },
