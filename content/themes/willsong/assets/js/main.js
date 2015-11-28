@@ -11,6 +11,7 @@
 
 requirejs.config({
 	paths: {
+    jquery: 'jquery',
 		userConfig: 'config',
 		velocity: '//cdn.jsdelivr.net/velocity/1.1.0/', //jquery.velocity.min & velocity.ui.min.
 		fitvids: '//cdn.jsdelivr.net/fitvids/1.1.0/jquery.fitvids',
@@ -22,11 +23,12 @@ requirejs.config({
 
 requirejs(
 [
+  'jquery',
 	'userConfig',
 	'velocity/velocity.min',
 	'fitvids'
 ],
-function (_uconfig){
+function ($, _uconfig){
 // ===============================
 // Start User Config.
 // ===============================
