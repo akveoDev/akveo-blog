@@ -12,7 +12,6 @@
 requirejs.config({
 	paths: {
     jquery: 'jquery',
-		userConfig: 'config',
 		velocity: '//cdn.jsdelivr.net/velocity/1.1.0/', //jquery.velocity.min & velocity.ui.min.
 		fitvids: '//cdn.jsdelivr.net/fitvids/1.1.0/jquery.fitvids',
 		prettify: '//cdn.jsdelivr.net/prettify/0.1/prettify',
@@ -24,14 +23,27 @@ requirejs.config({
 requirejs(
 [
   'jquery',
-	'userConfig',
 	'velocity/velocity.min',
 	'fitvids'
 ],
-function ($, _uconfig){
+function ($){
 // ===============================
 // Start User Config.
 // ===============================
+var _uconfig = {
+  _userCustomScripts: [],
+  socialProfiles: [],
+  widgetsConfig: {
+    _active: false
+  },
+  commentsSystem: {
+    _active: true,
+    type: 'disqus',
+    idOrShortname: 'akveo',
+    appID: 'akveo'
+  }
+};
+
 if (_uconfig._userCustomScripts.length > 0) {
 	require(_uconfig._userCustomScripts, function(){});
 };
