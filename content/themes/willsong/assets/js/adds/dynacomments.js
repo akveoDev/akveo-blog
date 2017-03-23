@@ -11,10 +11,15 @@ define([], function(){
 	var commentSystems = {
 		disqus: function(shortname){
 			$('#dynacomments').html('<div id="disqus_thread"></div>');
-			var disqus_shortname = shortname,
-				disqus_identifier = $('#dynacomments').data('backuseid');
+			var disqus_shortname = shortname;
+
+			window.disqus_config = function () {
+        		this.page.url = location.href; // Replace PAGE_URL with your page's canonical URL variable
+        		this.page.identifier = $('#dynacomments').data('backuseid'); // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      		};
 
 			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.setAttribute('data-timestamp', +new Date());
 			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 		},
